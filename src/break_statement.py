@@ -9,18 +9,18 @@ import sys
 
 def main():
 
-    # user enters 10 numbers with comma seperated
+    # user enters 10 numbers with comma separated
     numbers = input("Enter 10 numbers from 50 to 200: "). split(",")
 
     # if user entered 10 numbers proceed else exit
     if (len(numbers) == 10):
-        conver_number = list(map(int, numbers))  # convert to integer
-        for n in conver_number:
+        convert_number = list(map(int, numbers))  # convert to integer
+        for n in convert_number:
             if (n < 50 or n > 200):
                 print(f"invalid input: {n}")
                 sys.exit("sorry, you didn't enter between 50 to 200")
 
-        for n in conver_number:
+        for n in convert_number:
             if (n >= 100):
                 break
             else:

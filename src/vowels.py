@@ -15,7 +15,7 @@ def main():
     # check for each letter in string and uppercase vowels
     for s in string:
         if (s in vowels):
-            new_char = s.upper()  
+            new_char = s.upper()
             print(new_char, end="")
         else:
             print(s, end="")
