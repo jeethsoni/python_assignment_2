@@ -4,6 +4,10 @@
 *Date: 07/28/2023*
 
 ---
+
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)
+
+
 ### **1) Ask user to enter some text and write it to a text file use python to read the file and print the output line by line. Use python to append more text to the same file. Ask user for more text until user says I'm tired I am done.**
 
 My first file handling python script where I make the file generate by itself and ask user to enter some text whatever they want and write that to a file and print to the console as well. It's like magic how the file appears in the directory after I run the python file. 
