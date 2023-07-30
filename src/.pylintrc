@@ -6,7 +6,8 @@ max-line-length=150
 # Enable or disable certain checks. 1 means enabled, 0 means disabled.
 disable=missing-module-docstring,
         missing-function-docstring,
-        missing-class-docstring
+        missing-class-docstring,
+        superfluous-parens
 
 [MESSAGES CONTROL]
 
