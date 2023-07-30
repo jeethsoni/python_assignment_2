@@ -15,16 +15,15 @@ def main():
     # if user entered 10 numbers proceed else exit
     if (len(numbers) == 10):
         convert_number = list(map(int, numbers))  # convert to integer
-        for n in convert_number:
-            if (n < 50 or n > 200):
-                print(f"invalid input: {n}")
+        for num in convert_number:
+            if (num < 50 or num > 200):
+                print(f"invalid input: {num}")
                 sys.exit("sorry, you didn't enter between 50 to 200")
 
-        for n in convert_number:
-            if (n >= 100):
+        for num in convert_number:
+            if (num >= 100):
                 break
-            print(n)
-
+            print(num)
     else:
         print("sorry you didn't enter 10 numbers")
 
