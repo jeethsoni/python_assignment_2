@@ -23,8 +23,8 @@ def main():
         for n in convert_number:
             if (n >= 100):
                 break
-            else:
-                print(n)
+            print(n)
+
     else:
         print("sorry you didn't enter 10 numbers")
 
