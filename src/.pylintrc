@@ -1,13 +1,19 @@
 [MASTER]
 
 # Specify the maximum allowed line length.
-max-line-length=150
+max-line-length=300
 
 # Enable or disable certain checks. 1 means enabled, 0 means disabled.
 disable=missing-module-docstring,
         missing-function-docstring,
         missing-class-docstring,
-        superfluous-parens
+        superfluous-parens,
+        unspecified-encoding
+
+[BASIC]
+
+# Add "n" to the list of good names to ignore the invalid-name check for it
+good-names = n, rf, wf, ns, s
 
 [MESSAGES CONTROL]
 

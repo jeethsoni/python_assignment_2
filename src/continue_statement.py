@@ -15,7 +15,7 @@ def main():
     # if user entered 10 numbers proceed
     if (len(numbers) == 10):
         for n in numbers:
-            new_number = re.sub(r"\s+", "", n)  # remvoes white space globally
+            new_number = re.sub(r"\s+", "", n)  # removes white space globally
             # checks if user entered digits or not
             if (new_number.isnumeric() is False):
                 sys.exit("Sorry, you didn't enter an integer, please run it again")  # noqa
@@ -26,9 +26,9 @@ def main():
             if (n % 2 != 0):
                 print(n)
                 continue
-            else:
-                new_even = n * 100
-                print(f"new Even: {new_even}")
+
+            new_even = n * 100
+            print(f"new Even: {new_even}")
 
 
 if __name__ == "__main__":

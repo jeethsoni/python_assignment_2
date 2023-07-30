@@ -10,7 +10,7 @@ def main():
     # open the file to read it, write it to another file
     with open("user_file.txt", "r") as rf:
         with open("user_file_copy.txt", "w") as wf:
-            for line in rf: 
+            for line in rf:
                 wf.write(line)
     print("file copied")
 
