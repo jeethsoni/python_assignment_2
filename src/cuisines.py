@@ -1,13 +1,25 @@
-from pprint import pprint
+"""
+A python script to construct a dictionary of some of the world's 
+finest cuisines and store it in json document (prettified)
+
+@usage python3 cuisines.py
+"""
+
+
+import json
 
 
 def main():
+    # empty cuisine dictionary
     cuisine_dict = {}
+
+    # values of the cuisines
     cuisines = ["mexican", "italian", "thai"]
     mexican = ["enchiladas", "burrito", "tacos al pastor", "elote", "tamales"]
     italian = ["Risotto", "Pizza", "Pasta", "Lasagne", "Gelato"]
     thai = ["Pad Thai", "Tom Yum Goong ", "Kaeng Lueang", "Gaeng Daeng", "Gaeng Keow Wan Gai "]  # noqa
 
+    # loop through every item in cuisines and if matches add to the dictionary
     for cuisine in range(len(cuisines)):
         if (cuisines[cuisine] == "mexican"):
             cuisine_dict[cuisines[cuisine]] = mexican
@@ -16,7 +28,9 @@ def main():
         else:
             cuisine_dict[cuisines[cuisine]] = thai
 
-    pprint(cuisine_dict, width=50, indent=2, sort_dicts=False) 
+    # open the json file and dump the dictionary
+    with open("cuisines.json", "w") as wf:
+        json.dump(cuisine_dict, wf, indent=4)
 
 
 if __name__ == "__main__":
