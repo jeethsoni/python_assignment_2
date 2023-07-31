@@ -1,11 +1,9 @@
 """
-A python script to construct a dictionary of some of the world's 
+A python script to construct a dictionary of some of the world's
 finest cuisines and store it in json document (prettified)
 
 @usage python3 cuisines.py
 """
-
-
 import json
 
 
