@@ -1,0 +1,23 @@
+{
+    "mexican": [
+        "enchiladas",
+        "burrito",
+        "tacos al pastor",
+        "elote",
+        "tamales"
+    ],
+    "italian": [
+        "Risotto",
+        "Pizza",
+        "Pasta",
+        "Lasagne",
+        "Gelato"
+    ],
+    "thai": [
+        "Pad Thai",
+        "Tom Yum Goong ",
+        "Kaeng Lueang",
+        "Gaeng Daeng",
+        "Gaeng Keow Wan Gai "
+    ]
+}
