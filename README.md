@@ -51,15 +51,24 @@ This is the shortest solution of all. I simply used list comprehensions to solve
 
 ### **6) Write a python script to create a dictionary of recipe or whatever and write that dictionary to a file as a json document (prettify the json file).**  
 
+
+Some of the world's finest cuisine dishes stored in a pretty json document. It's so pretty and organized that it will make you hungry. I solved this two ways: 
+
+* **Hardcoding the dictionary**
+
 A program that will copy your favorite recipe dishes to a pretty json document. I used dictionaries and list inside a dictionary to make this beautiful recipe json document. I simple created two cuisines: mexican and indian and stored those dictionaries into recipe variable.
 
 I used with open() with "w" access mode to open the file and within it I used json.dump() to dump that recipe dictionary into the json file and indented it by 4. 
 
+* **Constructing the dictionary**
+
+This is another way I solved this. Only this time, I have 3 cuisines mexican, italian, and thai with 5 dishes for each one. I made an empty dictionary to store the dishes with it's cuisine later. I made a list of cuisine and separate list for dishes of each cuisine. Then I used for loop to loop through each cuisine and checked with if and else statement to add the cuisine with it's finest dishes to the empty dictionary. Finally, I took that delicious dictionary and dumped in a json file using with open() method 
+
+NOTE: Foodies please forgive me. I know this program made you hungry looking at all those dishes. Yummm :)
+
 ---
 
-This is my explanation for all the problem.
-
-Open for suggestions
+Open for suggestions 
 
 Jeet Soni
 
